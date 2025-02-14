@@ -96,33 +96,30 @@
             </div>
         </div>
 
-    <nav class="main-menu">
-        <img src="logo.png" alt="Logo Duque de Caxias" class="logo">
-        <div class="menu-links">
-            <a href="http://127.0.0.1:5500/sitee.html">Home</a>
-            <a href="http://127.0.0.1:5500/siteatendimento.html">Atendimento</a>
-
-            <a href="https://duquedecaxias.rj.gov.br/manutencao_pmdc/index.html">Organograma</a>
-            <a href="https://duquedecaxias.rj.gov.br/portal/boletim-oficial.html">Boletim Oficial</a>
-            <a href="http://127.0.0.1:5500/siteconteudo.html">Conteúdos</a> <!-- FAZER PÁGINA DEDICADA-->
-            <a href="https://duquedecaxias.rj.gov.br/manutencao_pmdc/index.html">Secretarias</a>
-            <a href="#">Balanços</a> <!-- FAZER PÁGINA DEDICADA-->
-            <a href="https://duquedecaxias.rj.gov.br/noticias/1">Notícias</a>
-            <a href="https://transparencia.duquedecaxias.rj.gov.br/perguntas-frequentes.php?conteudo=75">Perguntas Frequentes</a>
-            <a href="https://sistema.ouvidorias.gov.br/publico/RJ/Duquedecaxias/Manifestacao/RegistrarManifestacao">Fale conosco</a>
-        </div>
+        <nav class="main-menu">
+            <img src="logo.png" alt="Logo Duque de Caxias" class="logo">
+            <div class="menu-links">
+                <a href="sitee.html">Home</a>
+                <a href="siteatendimento.html">Atendimento</a>
+                <a href="sitelegislacao.html">Legislação</a>
+                <a href="siteformularios.html">Formulários</a> 
+                <a href="https://transparencia.duquedecaxias.rj.gov.br/perguntas-frequentes.php?conteudo=75">Perguntas Frequentes</a>
+                <a href="https://sistema.ouvidorias.gov.br/publico/RJ/Duquedecaxias/Manifestacao/RegistrarManifestacao">Fale conosco</a>
+            </div>
     </nav>
 
     <div class="page-title">
         <h1>ISS</h1>
         <br></br>
-        <p class="description">O Imposto Sobre Serviços é devido quando há prestação de serviços descritos na lista do artigo 104 do Código Tributário Municipal. 
-            <br>O responsável pelo pagamento pode ser o prestador do serviço ou tomador, à depender do caso. O valor final depende do valor do serviço e da alíquota aplicada, que pode ser de 2% a 5%. </p>
+        <p class="description">
+            O Imposto Sobre Serviços é devido quando há prestação de serviços descritos na lista do artigo 104 do Código Tributário Municipal. 
+            <br>O responsável pelo pagamento pode ser o prestador do serviço ou tomador, à depender do caso. O valor final depende do valor do serviço e da alíquota aplicada, que pode ser de 2% a 5%.
+        </p>
     </div>
 
     <div class="search-container">
         <form class="search-form" onsubmit="return false;">
-            <input type="text" class="search-input" id="searchInput" placeholder="Pesquisar..." oninput="filterOptions()">
+            <input type="text" class="search-input" id="searchInput" placeholder="O que você procura?" oninput="filterOptions()">
             <button type="submit" class="search-button">
                 <i class="fas fa-search"></i>
             </button>
@@ -132,7 +129,7 @@
     <div class="grid-container" id="optionsGrid">
         <!-- Primeira linha -->
         <div class="option-card" data-search="declarar dte guias emitir ">
-            <a href="https://www.issnetonline.com.br/duquedecaxias/online/Login/Login.aspx?ReturnUrl=%2fduquedecaxias%2fonline:" class="process-link" target="_blank">
+            <a href="https://www.issnetonline.com.br/duquedecaxias/online/Login/Login.aspx?ReturnUrl=%2fduquedecaxias%2fonline" class="process-link" target="_blank">
                 <i class="fas fa-newspaper"></i>
                 <h2>Declarar serviços, Emitir guias, DTE</h2>
             </a>
@@ -146,34 +143,58 @@
         </div>
         
 
-        <div class="option-card" data-search="ctm tributo">
-            <a href="https://leismunicipais.com.br/a/rj/d/duque-de-caxias/lei-ordinaria/2002/166/1664/lei-ordinaria-n-1664-2002-institui-o-novo-codigo-tributario-do-municipio" class="process-link" target="_blank">
+        <div class="option-card" data-search="impressao cadastral economico">
+            <a href="https://www.tributosnet.com.br/duquedecaxias/portal/Modulos/EmitirBCI.aspx?m=2982" class="process-link" target="_blank">
                 <i class="fas fa-search-dollar"></i>
-                <h2>Código Tributário Municipal</h2>
+                <h2>Consultar Substitutos Tributários</h2>
             </a>
         </div>
 
-        <div class="option-card" data-search="nfse nota fiscal serviço servico consultar verificar">
-            <a href="https://www.issnetonline.com.br/duquedecaxias/online/Contribuinte/ConsultaSubstitutosTributarios.aspx " class="process-link" target="_blank">
+        <div class="option-card" data-search="impressao impressão cadastral economico">
+            <a href="https://www.tributosnet.com.br/duquedecaxias/portal/Modulos/EmitirBCI.aspx?m=2982" class="process-link" target="_blank">
+                <i class="fas fa-dollar-sign"></i>
+                <h2>Impressão Cadastral Econômico</h2>
+            </a>
+        </div>
+
+        <div class="option-card" data-search="CNAE cnae iss codigo">
+            <a href="https://1drv.ms/x/s!Anwatyi83Jk34XS5_CQxc2Fszxro?e=XzYC71" class="process-link" target="_blank">
                 <i class="fas fa-receipt"></i>
-                <h2>Consultar Substitutos tributários</h2>
+                <h2>CNAE x Código ISS</h2>
             </a>
         </div>
 
-        <div class="option-card" data-search="dte legislaçao">
-            <a href="https://leismunicipais.com.br/a/rj/d/duque-de-caxias/lei-ordinaria/2018/291/2918/lei-ordinaria-n-2918-2018-institui-o-domicilio-tributario-eletronico-dt-e-e-altera-dispositivos-da-lei-municipal-n-1664-de-28-de-novembro-de-2002-codigo-tributario-municipal" class="process-link" target="_blank">
-                <i class="fas fa-gavel"></i>
-                <h2>Legislação do DT-E</h2>
+        <div class="option-card" data-search="leis legislaçao">
+            <a href="sitelegislacao.html" class="process-link" target="_blank">
+                <i class="fas fa-hammer"></i>
+                <h2>Legislação</h2>
             </a>
         </div>
 
-        <div class="option-card" data-search="legislacao normativas leis">
-            <a href="https://leismunicipais.com.br/a/rj/d/duque-de-caxias/lei-ordinaria/2010/233/2332/lei-ordinaria-n-2332-2010-institui-a-nota-fiscal-de-servicos-eletronica-nfs-e-e-da-outras-providencias" class="process-link" target="_blank">
-                <i class="fas fa-gavel"></i>
-                <h2>Legislação da NFS-E </h2>
+        <div class="option-card" data-search="formularios formu">
+            <a href="siteformularios.html" class="process-link" target="_blank">
+                <i class="fas fa-paperclip"></i>
+                <h2>Formulários </h2>
             </a>
         </div>
             </a>
+        </div>
+    </div>
+    <div class="side-menu">
+        <div class="menu-header">
+            <h2>MENU</h2>
+        </div>
+        <div class="menu-items">
+            <a href="sitee.html"><i class="fas fa-home"></i> Página inicial</a>
+            <a href="siteiss.html"><i class="fas fa-file-contract"></i> ISS</a>
+            <a href="siteiptu.html"><i class="fas fa-money-bill"></i> IPTU</a>
+            <a href="siteitbi.html"><i class="fas fa-dollar-sign"></i> ITBI</a>
+            <a href="sitenfse.html"><i class="fas fa-building"></i> NFS-e</a>
+            <a href="sitealvara.html"><i class="fas fa-chart-bar"></i> Alvará</a>
+            <a href="consultapublica.duquedecaxias.rj.gov.br:8004/consultapublica/index.php?class=ProcProcessoForm"><i class="fas fa-file-alt"></i> Consulta de Processos</a>
+            <a href="sitecertidoes.html"><i class="fas fa-clipboard-list"></i> Certidões</a>
+            <a href="siteplantaofiscal.html"><i class="fas fa-university"></i> Plantão Fiscal</a>
+            <a href="sitelegislacao.html"><i class="fas fa-hammer"></i> Legislação</a>
         </div>
     </div>
 
@@ -264,7 +285,7 @@
         </div>
 
         <div class="development-credits">
-            <p>Desenvolvido pela: Secretaria de Fazenda / Subsecretaria de Tecnologia</p>
+            <p>Desenvolvido pela: Secretaria de Fazenda / Subsecretaria de Tecnologia.</p>
         </div>
     </footer>
 
