@@ -629,7 +629,7 @@
 
         .side-menu {
             position: absolute;
-            top: 239px; /* Altura 126px ajustada para o Menu no Portal do Contribuinte */
+            top: 240px; /* Altura 126px ajustada para o Menu no Portal do Contribuinte */
             left: 0;
             width: 250px;
             background-color: #fff;
@@ -738,14 +738,14 @@
 
         /* Ajuste específico para a página NFS-E */
         .sitenfse .side-menu {
-            top: 372px;
-            height: calc(100vh - 198px);
+            top: 374px;
+            height: calc(100vh - 193px);
         }
 
         /* Ajuste específico para a página Plantão Fiscal */
         .siteplantaofiscal .side-menu {
-            top: 142px;
-            height: calc(100vh - 180px);
+            top: 318px;
+            height: calc(100vh - 592px);
         }
         .sitelegislacao .side-menu {
             top: 142px;
@@ -760,7 +760,7 @@
 
         .side-menu-iptu {
             height: 556px;
-            top: 375px;
+            top: 376px;
         }
 
         .side-menu-itbi {
@@ -774,13 +774,13 @@
         }
 
         .side-menu-alvara {
-            height: 850px;
-            top:115px;
+            height: 555px;
+            top:320px;
         }
 
         .side-menu-certidoes {
-            height: 750px;
-            top: 320px;
+            height: 553px;
+            top: 374px;
         }
 
         .side-menu-legislacao {
@@ -789,8 +789,8 @@
         }
 
         .side-menu-plantao {
-            height: 600px;
-            top: 320px;
+            height: 500px;
+            top: 220px;
         }
 
         .side-menu-formularios {
