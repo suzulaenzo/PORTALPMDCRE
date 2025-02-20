@@ -738,8 +738,8 @@
 
         /* Ajuste específico para a página NFS-E */
         .sitenfse .side-menu {
-            top: 142px;
-            height: calc(100vh - 180px);
+            top: 372px;
+            height: calc(100vh - 198px);
         }
 
         /* Ajuste específico para a página Plantão Fiscal */
@@ -754,7 +754,7 @@
 
         /* Altura personalizada para cada página */
         .side-menu-iss {
-            height: 755px;
+            height: 750px;
             top: 320px;
         }
 
@@ -769,13 +769,13 @@
         }
         /* ALTERAR DO NSFE PARA BAIXO */
         .side-menu-nfse {
-            height: 1000px;
-            top: 320px;
+            height: 150px;
+            top: 360px;
         }
 
         .side-menu-alvara {
             height: 850px;
-            top: 320px;
+            top:115px;
         }
 
         .side-menu-certidoes {
