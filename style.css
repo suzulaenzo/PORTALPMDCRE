@@ -330,24 +330,35 @@
         /* Media query para dispositivos móveis */
         @media screen and (max-width: 768px) {
             .menu-links {
-                display: grid;
-                grid-template-columns: repeat(2, 1fr);
-                gap: 10px;
-                padding: 0;
+                display: flex;
+                flex-direction: row;  /* Mantém os links na horizontal */
+                flex-wrap: wrap;      /* Permite quebra de linha se necessário */
+                justify-content: center;
+                align-items: center;
+                width: 100%;
+                gap: 10px;           /* Espaçamento entre os links */
+                padding: 10px;
             }
 
-            .main-menu a {
-                width: 100%;
-                min-width: unset;
-                margin: 0;
-                display: flex;
+            .menu-links a {
+                text-align: center;
+                padding: 5px 10px;
+                border: none;        /* Remove a borda que estava separando os links */
+                white-space: nowrap; /* Evita quebra de texto dentro do link */
+            }
+
+            /* Remove o padding-right e a borda direita do último link */
+            .menu-links a:not(:last-child) {
+                border-right: none;
+                padding-right: 10px;
+            }
+
+            .main-menu {
+                flex-direction: column;
                 align-items: center;
-                justify-content: center;
-                height: 44px;
             }
 
             .logo {
-                height: 45px;
                 margin-bottom: 15px;
             }
         }
@@ -480,7 +491,28 @@
             }
             
             .grid-container {
-                grid-template-columns: repeat(2, 1fr);
+                display: grid !important; /* Força a aplicação do grid */
+                grid-template-columns: repeat(2, calc(50% - 10px)) !important; /* Duas colunas com espaçamento */
+                gap: 20px !important;
+                padding: 15px !important;
+                width: 100% !important;
+                max-width: 100% !important;
+            }
+
+            .option-card {
+                width: 100% !important;
+                margin: 0 !important;
+                height: 120px !important; /* Altura um pouco menor para melhor visualização */
+            }
+
+            /* Ajusta o tamanho dos ícones e texto para o layout mobile */
+            .option-card i {
+                font-size: 30px !important;
+            }
+
+            .option-card h2 {
+                font-size: 16px !important;
+                margin-top: 10px !important;
             }
         }
 
@@ -629,7 +661,7 @@
 
         .side-menu {
             position: absolute;
-            top: 240px; /* Altura 126px ajustada para o Menu no Portal do Contribuinte */
+            top: 239px; /* Altura 126px ajustada para o Menu no Portal do Contribuinte */
             left: 0;
             width: 250px;
             background-color: #fff;
@@ -738,18 +770,18 @@
 
         /* Ajuste específico para a página NFS-E */
         .sitenfse .side-menu {
-            top: 374px;
-            height: calc(100vh - 193px);
+            top: 372px;
+            height: calc(100vh - 198px);
         }
 
         /* Ajuste específico para a página Plantão Fiscal */
         .siteplantaofiscal .side-menu {
-            top: 318px;
-            height: calc(100vh - 592px);
+            top: 142px;
+            height: calc(100vh - 180px);
         }
         .sitelegislacao .side-menu {
             top: 142px;
-            height: calc(100vh - 385px);
+            height: calc(100vh - 180px);
         }
 
         /* Altura personalizada para cada página */
@@ -760,7 +792,7 @@
 
         .side-menu-iptu {
             height: 556px;
-            top: 376px;
+            top: 375px;
         }
 
         .side-menu-itbi {
@@ -774,13 +806,13 @@
         }
 
         .side-menu-alvara {
-            height: 555px;
-            top:320px;
+            height: 850px;
+            top:115px;
         }
 
         .side-menu-certidoes {
-            height: 553px;
-            top: 374px;
+            height: 750px;
+            top: 320px;
         }
 
         .side-menu-legislacao {
@@ -789,8 +821,8 @@
         }
 
         .side-menu-plantao {
-            height: 500px;
-            top: 220px;
+            height: 600px;
+            top: 320px;
         }
 
         .side-menu-formularios {
@@ -798,3 +830,9 @@
             top: 320px;
         }
         
+/* tirei o rodapé. */
+@media (max-width: 600px) {
+    footer {
+        display: none;
+    }
+}
