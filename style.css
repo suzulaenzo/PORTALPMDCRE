@@ -771,13 +771,13 @@
         /* Ajuste específico para a página NFS-E */
         .sitenfse .side-menu {
             top: 372px;
-            height: calc(100vh - 198px);
+            height: 755px;
         }
 
         /* Ajuste específico para a página Plantão Fiscal */
         .siteplantaofiscal .side-menu {
-            top: 142px;
-            height: calc(100vh - 180px);
+            top: 320px;
+            height: 353px;
         }
         .sitelegislacao .side-menu {
             top: 142px;
@@ -786,7 +786,7 @@
 
         /* Altura personalizada para cada página */
         .side-menu-iss {
-            height: 750px;
+            height: 755px;
             top: 320px;
         }
 
@@ -799,6 +799,11 @@
             height: 355px;
             top: 320px;
         }
+
+        .side-menu-alvara {
+            height: 355px;
+            top: 500px;
+        }
         /* ALTERAR DO NSFE PARA BAIXO */
         .side-menu-nfse {
             height: 150px;
@@ -806,13 +811,13 @@
         }
 
         .side-menu-alvara {
-            height: 850px;
-            top:115px;
+            height: 555px;
+            top: 320px;
         }
 
         .side-menu-certidoes {
-            height: 750px;
-            top: 320px;
+            height: 555px;
+            top: 352px;
         }
 
         .side-menu-legislacao {
@@ -834,5 +839,82 @@
 @media (max-width: 600px) {
     footer {
         display: none;
+    }
+}
+
+/* Media query para dispositivos móveis */
+@media screen and (max-width: 768px) {
+    /* Bordas arredondadas no título e área de busca */
+    .page-title {
+        border-radius: 8px;
+        margin: 10px 15px;
+        padding: 20px;
+    }
+
+    .search-container {
+        border-radius: 8px;
+        margin: 10px 15px;
+        width: auto;
+    }
+
+    /* Centralização da logo com links */
+    .main-menu {
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        justify-content: center;
+    }
+
+    .logo {
+        height: 45px;
+        margin-bottom: 15px;
+        margin-right: 0;
+    }
+
+    .menu-links {
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        gap: 10px;
+        width: 100%;
+    }
+
+    .menu-links a {
+        text-align: center;
+        width: 100%;
+        padding: 5px 0;
+        border-right: none;
+    }
+
+    /* Posição do VLibras */
+    div[vw-access-button] {
+        top: -82px !important; /* Move o botão mais para cima */
+    }
+
+    /* Alto contraste para mobile */
+    .high-contrast .main-menu,
+    .high-contrast .top-bar,
+    .high-contrast .option-card,
+    .high-contrast .page-title,
+    .high-contrast .search-container,
+    .high-contrast .search-input,
+    .high-contrast .search-button {
+        background-color: black !important;
+        color: white !important;
+        border: 1px solid white !important;
+    }
+
+    .high-contrast a,
+    .high-contrast h1,
+    .high-contrast h2,
+    .high-contrast p,
+    .high-contrast i,
+    .high-contrast input,
+    .high-contrast ::placeholder {
+        color: white !important;
+    }
+
+    .high-contrast .search-input::placeholder {
+        color: white !important;
     }
 }
