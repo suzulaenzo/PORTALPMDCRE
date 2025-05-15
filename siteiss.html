@@ -47,6 +47,83 @@
             .page-title h1 {
                 margin-bottom: 0px;
             }
+
+            .accordion {
+                border: 1px solid #ccc;
+                border-radius: 6px;
+                margin-bottom: 10px;
+                overflow: hidden;
+                margin-left: 250px;
+            }
+
+            .accordion-header {
+                background-color: #2980b9;
+                cursor: pointer;
+                padding: 15px;
+                font-size: 24px;
+                font-weight: bold;
+                color: #ffffff;
+                border-bottom: 1px solid #ccc;
+            }
+
+            .accordion-content {
+                display: none;
+                padding: 15px;
+                background: #fdfdfd;
+                font-size: 16px;
+            }
+
+            .document-entry {
+                display: flex;
+                align-items: baseline;
+            }
+
+            .document-entry a {
+                font-weight: bold;
+                color: #2980b9;
+                text-decoration: none;
+                margin-right: 10px;
+                margin-bottom: 10px;
+            }
+
+            .document-description {
+                color: #000000;
+                font-size: 16px;
+                text-align: justify;
+                flex-grow: 1;
+            }
+
+            @media screen and (max-width: 768px) {
+                .accordion {
+                    margin-left: 20px;
+                    margin-right: 20px;
+                    width: auto;
+                }
+
+                .accordion-header {
+                    text-align: left;
+                    font-size: 20px;
+                    padding: 12px;
+                }
+
+                .document-entry {
+                    display: flex;
+                    align-items: flex-start;
+                    margin-bottom: 15px;
+                    padding: 5px 0;
+                }
+
+                .document-entry a {
+                    font-size: 16px;
+                    font-weight: bold;
+                    margin-right: 8px;
+                }
+
+                .document-description {
+                    font-size: 14px;
+                    line-height: 1.4;
+                }
+            }
         </style>
         
         <link rel="icon" type="image/png" href="logofavicon.png">
@@ -100,8 +177,8 @@
             <img src="logo.png" alt="Logo Duque de Caxias" class="logo">
             <div class="menu-links">
                 <a href="sitee.html">Página Inicial</a>
-                <a href="sitelegislacao.html">Legislação</a>
-                <a href="siteformularios.html">Formulários</a> 
+                <a href="https://1drv.ms/f/s!Anwatyi83Jk34VXtbPIDOxeKlHzg?e=VS2POt">Legislação</a>
+                <a href="https://1drv.ms/f/s!Anwatyi83Jk34VQJZ3SycVtGvVH9?e=fTERjF">Formulários</a> 
                 <a href="https://transparencia.duquedecaxias.rj.gov.br/perguntas-frequentes.php?conteudo=75">Perguntas Frequentes</a>
                 <a href="https://sistema.ouvidorias.gov.br/publico/RJ/Duquedecaxias/Manifestacao/RegistrarManifestacao">Fale conosco</a>
             </div>
@@ -143,7 +220,7 @@
             
 
             <div class="option-card" data-search="impressao cadastral economico">
-                <a href="https://www.tributosnet.com.br/duquedecaxias/portal/Modulos/EmitirBCI.aspx?m=2982" class="process-link" target="_blank">
+                <a href="https://www.issnetonline.com.br/duquedecaxias/online/Contribuinte/ConsultaSubstitutosTributarios.aspx" class="process-link" target="_blank">
                     <i class="fas fa-search-dollar"></i>
                     <h2>Consultar Substitutos Tributários</h2>
                 </a>
@@ -171,7 +248,7 @@
             </div>
 
             <div class="option-card" data-search="formularios formu">
-                <a href="siteformularios.html" class="process-link" target="_blank">
+                <a href="https://1drv.ms/f/s!Anwatyi83Jk34VQJZ3SycVtGvVH9?e=fTERjF" class="process-link" target="_blank">
                     <i class="fas fa-paperclip"></i>
                     <h2>Formulários </h2>
                 </a>
@@ -179,6 +256,7 @@
                 </a>
             </div>
         </div>
+
         <div class="side-menu side-menu-iss">
             <div class="menu-header">
                 <h2>MENU</h2>
@@ -193,7 +271,8 @@
                 <a href="http://consultapublica.duquedecaxias.rj.gov.br:8004/consultapublica/index.php?class=ProcProcessoForm"><i class="fas fa-file-alt"></i> Consulta de Processos</a>
                 <a href="sitecertidoes.html"><i class="fas fa-clipboard-list"></i> Certidões</a>
                 <a href="siteplantaofiscal.html"><i class="fas fa-university"></i> Plantão Fiscal</a>
-                <a href="sitelegislacao.html"><i class="fas fa-hammer"></i> Legislação</a>
+                <a href="https://1drv.ms/f/s!Anwatyi83Jk34VXtbPIDOxeKlHzg?e=VS2POt"><i class="fas fa-hammer"></i> Legislação</a>
+                <a href="https://1drv.ms/f/s!Anwatyi83Jk34VQJZ3SycVtGvVH9?e=fTERjF"><i class="fas fa-paperclip"></i> Formulários</a>
             </div>
         </div>
 
@@ -247,29 +326,29 @@
                     <h3>FALE CONOSCO</h3>
                     <div class="contact-info">
                         <div class="contact-item">
-                            <i class="fas fa-phone"></i>
+                            <i class="fas fa-phone" style= "margin-right: -3px;"></i>
                             <p>21 2773-6213</p>
                         </div>
-
+    
                         <div class="contact-item">
-                            <i class="fas fa-envelope"></i>
+                            <i class="fas fa-envelope" style="position: relative; left: -0.08rem; margin-right: -3px;"></i>
                             <p>ouvidoria@duquedecaxias.rj.gov.br</p>
                         </div>
-
+    
                         <div class="contact-item">
                             <i class="fas fa-map-marker-alt"></i>
                             <p>Alameda Esmeralda 206<br>
                             Jardim Primavera, Duque de Caxias/RJ</p>
                         </div>
-
+    
                         <div class="contact-item">
                             <i class="fas fa-map-marker-alt"></i>
                             <p>Praça Roberto da Silveira, 31 - 2º andar<br>
                             Centro, Duque de Caxias/RJ</p>
                         </div>
-
+    
                         <div class="contact-item">
-                            <i class="fas fa-clock"></i>
+                            <i class="fas fa-clock" style="position: relative; left: -0.10rem; margin-right: -3px;"></i>
                             <p>Segunda - Sexta, 9h - 17h</p>
                         </div>
                     </div>
@@ -300,6 +379,12 @@
                         card.style.display = 'none';
                     }
                 });
+            }
+
+            function toggleAccordion(header) {
+                const content = header.nextElementSibling;
+                const isOpen = content.style.display === "block";
+                content.style.display = isOpen ? "none" : "block";
             }
         </script>
     </body>

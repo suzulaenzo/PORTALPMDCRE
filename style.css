@@ -217,13 +217,6 @@
             background-color: rgba(0, 0, 0, 0.1);
             font-size: 13px;
         }
-
-        .contato-item {
-            display: flex;
-            align-items: center;
-            gap: 10px;
-            margin-bottom: 10px;
-        }
         
         .contato-item i {
             min-width: 20px;
@@ -232,7 +225,7 @@
         .contact-item {
             display: flex;
             align-items: flex-start;
-            gap: 10px;
+            gap: 8px;
             margin-bottom: 10px;
         }
         
@@ -821,8 +814,8 @@
         }
 
         .side-menu-legislacao {
-            height: 650px;
-            top: 320px;
+            height: 600px;
+            top: 40px;
         }
 
         .side-menu-plantao {
