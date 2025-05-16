@@ -654,19 +654,13 @@
 
         .side-menu {
             position: absolute;
-            top: 239px; /* Altura 126px ajustada para o Menu no Portal do Contribuinte */
+            top: 239px;
             left: 0;
             width: 250px;
             background-color: #fff;
             border-right: 1px solid #ddd;
-            height: 955px; /* Altura 1067px para o Menu no Portal do Contribuinte */
+            height: 1155px;
             overflow-y: auto;
-            @media (max-width: 1080px) { 
-                .side-menu {
-                    width: 100%; /* No celular, o menu ocupa toda a largura */
-                    text-align: center;
-                }
-            }
         }
 
         .menu-header {
@@ -770,11 +764,11 @@
         /* Ajuste específico para a página Plantão Fiscal */
         .siteplantaofiscal .side-menu {
             top: 320px;
-            height: 353px;
+            height: 513px;
         }
         .sitelegislacao .side-menu {
-            top: 142px;
-            height: calc(100vh - 180px);
+            top: 239px;
+            height: 645px !important;
         }
 
         /* Altura personalizada para cada página */
@@ -789,7 +783,7 @@
         }
 
         .side-menu-itbi {
-            height: 355px;
+            height: 555px;
             top: 320px;
         }
 
@@ -814,7 +808,7 @@
         }
 
         .side-menu-legislacao {
-            height: 600px;
+            height: 800px;
             top: 40px;
         }
 
@@ -910,4 +904,14 @@
     .high-contrast .search-input::placeholder {
         color: white !important;
     }
+}
+
+.siteplantaofiscal .accordion {
+    border: none;
+    border-radius: 6px;
+    margin-bottom: 10px;
+    overflow: hidden;
+    margin-left: 252px;
+    height: 800px !important;  /* Aumentando a altura do fundo branco e forçando com !important */
+    background: #fdfdfd;
 }
